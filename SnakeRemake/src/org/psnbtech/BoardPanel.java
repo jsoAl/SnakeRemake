@@ -16,7 +16,49 @@ import javax.swing.JPanel;
  */
 public class BoardPanel extends JPanel {
 	
+	/**
+	 * Serial Version UID.
+	 */
+	private static final long serialVersionUID = -1102632585936750607L;
+
+	/**
+	 * The number of columns on the board. (Should be odd so we can start in
+	 * the center).
+	 */
+	public static final int COL_COUNT = 25;
 	
+	/**
+	 * The number of rows on the board. (Should be odd so we can start in
+	 * the center).
+	 */
+	public static final int ROW_COUNT = 25;
+	
+	/**
+	 * The size of each tile in pixels.
+	 */
+	public static final int TILE_SIZE = 20;
+	
+	/**
+	 * The number of pixels to offset the eyes from the sides.
+	 */
+	private static final int EYE_LARGE_INSET = TILE_SIZE / 3;
+	
+	/**
+	 * The number of pixels to offset the eyes from the front.
+	 */
+	private static final int EYE_SMALL_INSET = TILE_SIZE / 6;
+	
+	/**
+	 * The length of the eyes from the base (small inset).
+	 */
+	private static final int EYE_LENGTH = TILE_SIZE / 5;
+	
+	/**
+	 * The font to draw the text with.
+	 */
+	private static final Font FONT = new Font("Tahoma", Font.BOLD, 25);
+		
+	/**
 	 * The SnakeGame instance.
 	 */
 	private SnakeGame game;
