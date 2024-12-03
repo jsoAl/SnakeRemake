@@ -16,7 +16,17 @@ import javax.swing.JPanel;
  */
 public class BoardPanel extends JPanel {
 	
-		/**
+	
+	 * The number of pixels to offset the eyes from the front.
+	 */
+	private static final int EYE_SMALL_INSET = TILE_SIZE / 6;
+	
+	/**
+	 * The length of the eyes from the base (small inset).
+	 */
+	private static final int EYE_LENGTH = TILE_SIZE / 5;
+	
+	/**
 	 * The font to draw the text with.
 	 */
 	private static final Font FONT = new Font("Tahoma", Font.BOLD, 25);
